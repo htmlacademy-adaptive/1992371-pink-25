@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Егор Штепа](https://up.htmlacademy.ru/adaptive/25/user/1992371).
-* Наставник: `Дмитрий Дроганов`.
+* Наставник: [Дмитрий Дроганов](https://htmlacademy.ru/profile/dmdragon).
 
 ---
 
