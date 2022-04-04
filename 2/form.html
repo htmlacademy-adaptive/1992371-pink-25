@@ -22,170 +22,143 @@
 
     </header>
 
-    <main class="main-container">
-      <section class="preview">
+    <main class="main-form">
 
-        <h1 class="visually-hidden">Взгляните иначе</h1>
+      <section class="catalog">
 
-        <div class="preview__text">
-          <p>Взгляните на жизнь иначе!</p>
+        <h2 class="visually-hidden">Фотографии пользователей</h2>
+
+        <div class="catalog__text">
+          <p>Конкурс на самое безбашенное путешествие с Пинк</p>
         </div>
 
-        <div class="preview__photo">
-          <img src="img/phone-preview.png" alt="Телефон" height="286" width="320">
+        <div class="catalog__text-preveiw">
+          <p>Поделитесь своей историей и получитешанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         </div>
 
       </section>
 
-      <section class="download">
+      <section class="full-name">
 
-        <h2 class="visually-hidden">Мы на разных платформах</h2>
-        <div class="download__download-link">
-          <a href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+        <h2 class="visually-hidden">Полное имя</h2>
+
+        <div class="full-name__section">
+          <label id="surname">Фамилия:</label>
+          <input id="surname" type="text" placeholder="Укажите фамилию *">
         </div>
 
-        <div class="download__platforms">
-          <ul class="platforms__list">
+        <div class="full-name__section">
+          <label id="first-name">Имя:</label>
+          <input id="first-name" type="text" placeholder="Укажите имя *">
+        </div>
 
-            <li class="platforms__list-item">
-              <a href="https://www.apple.com/ru/app-store/"><img src="img/ios.svg" alt="apple" height="56" width="47"></a>
+        <div class="full-name__section">
+          <label id="last-name">Фамилия:</label>
+          <input id="last-name" type="text" placeholder="Ну и отчество тоже *">
+        </div>
+
+      </section>
+
+      <section class="check">
+
+        <h2 class="visually-hidden">Ваши достижения</h2>
+
+        <div class="check__achievement">
+          <p class="check__achievement check__achievement--text">Ваши безбашенные достижения в путешествии</p>
+        </div>
+
+        <div class="check__action">
+
+          <ul class="check__action check__action--list">
+
+            <li>
+              <input id="checkbox-shark" type="checkbox" checked>
+              <label id="checkbox-shark">Сделал селфи с акулой</label>
             </li>
 
-            <li class="platforms__list-item">
-              <a href="https://play.google.com/store/apps?hl=ru&gl=US"><img src="img/android.svg" alt="android" height="47" width="43"></a>
+            <li>
+              <input id="checkbox-beach" type="checkbox" checked>
+              <label id="checkbox-beach">Обгорел на пляже</label>
             </li>
 
-            <li class="platforms__list-item">
-              <a href="https://www.microsoft.com/"><img src="img/microsoft.svg" alt="microsoft" height="41" width="44"></a>
+            <li>
+              <input id="checkbox-seen" type="checkbox">
+              <label id="checkbox-seen">Видел Чака Норриса</label>
+            </li>
+
+            <li>
+              <input id="checkbox-souvenirs" type="checkbox">
+              <label id="checkbox-souvenirs">Накупил сувениров</label>
+            </li>
+
+            <li>
+              <input id="checkbox-tower" type="checkbox" checked>
+              <label id="checkbox-tower">Удержал башню</label>
+            </li>
+
+            <li>
+              <input id="checkbox-hotel" type="checkbox">
+              <label id="checkbox-hotel">Разгромил отель</label>
             </li>
 
           </ul>
         </div>
 
-        <div class="download__desc">
-          <p class="download__desc download__desc--text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+
+      <section class="mail-phone">
+
+        <h2 class="visually-hidden">Номер и мыло</h2>
+
+        <div class="mail-phone__section">
+          <label id="phone">Номер телефона</label>
+          <input id="phone" type="phone" placeholder="Номер, пожалуйста">
+        </div>
+
+        <div class="mail-phone__section">
+          <label id="mail">Адрес почты</label>
+          <input id="mail" type="mail" placeholder="Введите почту *">
         </div>
 
       </section>
 
-      <section class="attract">
+      <section class="platforms-radio">
 
-        <h2 class="visually-hidden">Привлекаем клиентов</h2>
-        <div class="attract__text">
-          <p>Устали от серости мегаполиса? Нам есть, что вампредложить!</p>
+        <h2 class="visually-hidden">Платформы Пинк</h2>
+
+        <p class="check__achievement check__achievement--text">С каким приложением путешествовали?</p>
+
+        <div class="paltforms-radio__voice">
+          <input id="ios" type="radio" checked>
+          <label id="ios">Pink для IOS</label>
+        </div>
+
+        <div class="paltforms-radio__voice">
+          <input id="android" type="radio">
+          <label id="android">Pink на Android</label>
+        </div>
+
+        <div class="paltforms-radio__voice">
+          <input id="windows" type="radio">
+          <label id="windows">Windows Phone</label>
         </div>
 
       </section>
 
-      <section class="benefits">
+      <section class="emotions">
 
-        <h2 class="visually-hidden">Преимушества</h2>
+        <h2 class="visually-hidden">Расскажите о своих эмоциях</h2>
 
-        <img class="benefits__image" src="img/iphone-solo.png" alt="Превью на телефоне" hieght="320" width="157">
-
-        <div class="benefits__benefits-container">
-
-          <ul class="list-benefits">
-            <li class="list-benefits__item">
-              <h3>Поднимает настроение</h3>
-              <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="list-benefits__item">
-              <h3>Меняет мир вокруг</h3>
-              <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="list-benefits__item">
-              <h3>Заводит новых друзей</h3>
-              <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
+        <div class="emotions__get">
+          <p class="check__achievement check__achievement--text">Опишите свои эмоции</p>
+          <input class="emotions__get emotions__get-input" type="text" placeholder="Можно прям в красках, нe стесняясь в выражениях">
+          <button class="emotions__get emotions__get-button" type="button">Отправить форму</button>
+          <p class="emotions__get emotions__get--ps">* - обязательные поля</p>
         </div>
-
-      </section>
-
-      <section class="reviews">
-
-        <h2 class="visually-hidden">Слайдер с отзывами</h2>
-
-      <div class="reviews__text">
-        <p class="reviews__text reviews__text--author-name">Николай Петров</p>
-        <p class="reviews__text reviews__text--author-desc"> «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-      </div>
-
-
-      <div class="reviews__slider reviews__slider-link">
-
-        <div class="reviews__slider">
-          <a href=""><img src="img/slider-active.svg" alt="Предыдущий слайд" height="6" width="6"></a>
-        </div>
-
-        <div class="reviews__slider">
-         <a href=""><img src="img/slider-innactive.svg" alt="Предыдущий слайд" height="6" width="6"></a>
-        </div>
-
-         <div class="reviews__slider">
-          <a href=""><img src="img/slider-innactive.svg" alt="Предыдущий слайд" height="6" width="6"></a>
-        </div>
-
-      </div>
-
-      </section>
-
-      <section class="tariffs">
-
-        <h2 class="visually-hidden">Тарифы</h2>
-
-        <div class="tariffs__header">
-          <h4 class="tariffs__header tariffs__header--name">Стандарт</h4>
-          <p class="tariffs__header tariffs__header--price">3,99 USD</p>
-        </div>
-
-        <div class="tariffs__main">
-          <p>Розовый фильтр</p>
-          <p>Смайлики</p>
-          <p>Комментарии</p>
-        </div>
-
-        <div class="reviews__slider reviews__slider-link">
-
-          <div class="reviews__slider">
-            <a href=""><img src="img/slider-innactive.svg" alt="Предыдущий слайд" height="6" width="6"></a>
-          </div>
-
-          <div class="reviews__slider">
-            <a href=""><img src="img/slider-active.svg" alt="Предыдущий слайд" height="6" width="6"></a>
-          </div>
-
-           <div class="reviews__slider">
-            <a href=""><img src="img/slider-innactive.svg" alt="Предыдущий слайд" height="6" width="6"></a>
-          </div>
-
-        </div>
-
-      </section>
-
-      <section class="contucts">
-
-        <h2 class="visually-hidden">Контакты</h2>
-
-        <p class="contucts__text-me">Остались вопросы? Свяжитесь с нами!</p>
-
-        <p class="reviews__text reviews__text--author-contuct">Звоните:</p>
-        <a href="#" class="contucts__links"><span class="contucts__links contucts__links--font">+7 (812) 555-66-66</span></a>
-
-        <p class="reviews__text reviews__text--author-contuct">Пишите:</p>
-        <a href="#" class="contucts__links"><span class="contucts__links contucts__links--font">mail@htmlacademy.ru</span></a>
-
-        <p class="reviews__text reviews__text--author-contuct">Приезжайте в гости:</p>
-        <a href="#" class="contucts__links"><span class="contucts__links contucts__links--font">ул. Большая Конюшенная, 19/8</span></a>
-
-        <img src="img/map.png" alt="Карта" height="200" width="320">
-        <img src="img/map marker.png" alt="Местоположение" height="36" width="36">
 
       </section>
 
     </main>
-
     <footer class="footer-container">
 
       <section class="footer">
@@ -218,6 +191,5 @@
       </section>
 
     </footer>
-
   </body>
 </html>
