@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/main-header.scss","style.css"],"names":[],"mappings":"AAAA;EACE,yBAAA;ACCF","file":"style.css","sourcesContent":["body{\n  background-color: #F0F0F0;\n}\n\n .main-header{\n\n}\n","body {\n  background-color: #F0F0F0;\n}"]}
