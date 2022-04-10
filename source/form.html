@@ -38,25 +38,25 @@
 
       </section>
 
-      <form action="https://echo.htmlacademy.ru/">
+    <form action="https://echo.htmlacademy.ru/">
 
         <section class="full-name">
 
           <h2 class="visually-hidden">Полное имя</h2>
 
           <div class="full-name__section">
-            <label id="surname">Фамилия:</label>
-            <input id="surname" type="text" placeholder="Укажите фамилию *">
+            <label for="surname">Фамилия:</label>
+            <input name="surname-input" id="surname" type="text" placeholder="Укажите фамилию *" required>
           </div>
 
           <div class="full-name__section">
-            <label id="first-name">Имя:</label>
-            <input id="first-name" type="text" placeholder="Укажите имя *">
+            <label for="first-name">Имя:</label>
+            <input name="first-name-input" id="first-name" type="text" placeholder="Укажите имя *" required>
           </div>
 
           <div class="full-name__section">
-            <label id="last-name">Фамилия:</label>
-            <input id="last-name" type="text" placeholder="Ну и отчество тоже *">
+            <label for="last-name">Фамилия:</label>
+            <input name="last-name-input" id="last-name" type="text" placeholder="Ну и отчество тоже *" required>
           </div>
 
         </section>
@@ -74,33 +74,33 @@
             <ul class="check__action check__action--list">
 
               <li>
-                <input id="checkbox-shark" type="checkbox" checked>
-                <label id="checkbox-shark">Сделал селфи с акулой</label>
+                <input name="shark" id="checkbox-shark" type="checkbox" checked>
+                <label for="checkbox-shark">Сделал селфи с акулой</label>
               </li>
 
               <li>
-                <input id="checkbox-beach" type="checkbox" checked>
-                <label id="checkbox-beach">Обгорел на пляже</label>
+                <input name="beach" id="checkbox-beach" type="checkbox" checked>
+                <label for="checkbox-beach">Обгорел на пляже</label>
               </li>
 
               <li>
-                <input id="checkbox-seen" type="checkbox">
-                <label id="checkbox-seen">Видел Чака Норриса</label>
+                <input name="seen" id="checkbox-seen" type="checkbox">
+                <label for="checkbox-seen">Видел Чака Норриса</label>
               </li>
 
               <li>
-                <input id="checkbox-souvenirs" type="checkbox">
-                <label id="checkbox-souvenirs">Накупил сувениров</label>
+                <input name="souvenirs" id="checkbox-souvenirs" type="checkbox">
+                <label for="checkbox-souvenirs">Накупил сувениров</label>
               </li>
 
               <li>
-                <input id="checkbox-tower" type="checkbox" checked>
-                <label id="checkbox-tower">Удержал башню</label>
+                <input name="tower" id="checkbox-tower" type="checkbox" checked>
+                <label for="checkbox-tower">Удержал башню</label>
               </li>
 
               <li>
-                <input id="checkbox-hotel" type="checkbox">
-                <label id="checkbox-hotel">Разгромил отель</label>
+                <input name="hotel" id="checkbox-hotel" type="checkbox">
+                <label for="checkbox-hotel">Разгромил отель</label>
               </li>
 
             </ul>
@@ -113,13 +113,13 @@
           <h2 class="visually-hidden">Номер и мыло</h2>
 
           <div class="mail-phone__section">
-            <label id="phone">Номер телефона</label>
-            <input id="phone" type="phone" placeholder="Номер, пожалуйста">
+            <label for="phone">Номер телефона</label>
+            <input name="phone-user" id="phone" type="tel" placeholder="Номер, пожалуйста">
           </div>
 
           <div class="mail-phone__section">
-            <label id="mail">Адрес почты</label>
-            <input id="mail" type="mail" placeholder="Введите почту *">
+            <label for="mail">Адрес почты</label>
+            <input name="mail-user" id="mail" type="email" placeholder="Введите почту *" required>
           </div>
 
         </section>
@@ -128,21 +128,21 @@
 
           <h2 class="visually-hidden">Платформы Пинк</h2>
 
-          <p class="check__achievement check__achievement--text">С каким приложением путешествовали?</p>
+          <p class="platforms-radio__text">С каким приложением путешествовали?</p>
 
-          <div class="paltforms-radio__voice">
-            <input id="ios" type="radio" checked>
-            <label id="ios">Pink для IOS</label>
+          <div class="platforms-radio__voice">
+            <input name="select-platform" id="ios" type="radio" checked>
+            <label for="ios">Pink для IOS</label>
           </div>
 
-          <div class="paltforms-radio__voice">
-            <input id="android" type="radio">
-            <label id="android">Pink на Android</label>
+          <div class="platforms-radio__voice">
+            <input name="select-platform" id="android" type="radio">
+            <label for="android">Pink на Android</label>
           </div>
 
-          <div class="paltforms-radio__voice">
-            <input id="windows" type="radio">
-            <label id="windows">Windows Phone</label>
+          <div class="platforms-radio__voice">
+            <input name="select-platform" id="windows" type="radio">
+            <label for="windows">Windows Phone</label>
           </div>
 
         </section>
@@ -152,20 +152,16 @@
           <h2 class="visually-hidden">Расскажите о своих эмоциях</h2>
 
           <div class="emotions__get">
-            <p class="check__achievement check__achievement--text">Опишите свои эмоции</p>
-            <input class="emotions__get emotions__get-input" type="text" placeholder="Можно прям в красках, нe стесняясь в выражениях">
+            <p class="emotions__get emotions__get--text">Опишите свои эмоции</p>
+            <input class="emotions__get emotions__get-input" type="text" name="emotions-input" placeholder="Можно прям в красках, нe стесняясь в выражениях">
             <button class="emotions__get emotions__get-button" type="submit">Отправить форму</button>
             <p class="emotions__get emotions__get--ps">* - обязательные поля</p>
           </div>
 
         </section>
       </form>
-<<<<<<< Updated upstream
-    </main>
-=======
     </main>
 
->>>>>>> Stashed changes
     <footer class="footer-container">
 
       <section class="footer">
