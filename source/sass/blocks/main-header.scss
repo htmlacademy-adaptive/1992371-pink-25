@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Open+Sans:wght@300;400;700&display=swap');
 $tablet-width: 660px;
 $desktop-width: 1200px;
@@ -400,5 +401,41 @@ body {
     padding-top: 72px;
     padding-bottom: 0;
   }
+=======
+.page__body {
+  background-color: #f0f0f0;
+  width: 320px;
+  margin: 0 20px;
+}
 
+.visually-hidden {
+  display: none;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+
+  &__logo{
+    height: 23px;
+  }
+}
+
+.header-nav__list {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+}
+
+.header-nav {
+  display: flex;
+}
+>>>>>>> Stashed changes
+
+.header-nav__toggle {
+  height: 24px;
 }
