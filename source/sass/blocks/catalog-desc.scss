@@ -1,0 +1,42 @@
+.catalog-desc {
+  width: 320px;
+  padding: 0 20px;
+}
+
+.catalog__text {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  padding-top: 36px;
+  padding-left: 56px;
+  padding-bottom: 84px;
+  width: 172px;
+  color: #ffffff;
+
+  p {
+    margin: 0;
+  }
+
+}
+
+.catalog__text-preveiw {
+  position: relative;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  width: 280px;
+}
+
+.catalog__text-preveiw::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 567px;
+  width: 320px;
+  background-color: #ffffff;
+}

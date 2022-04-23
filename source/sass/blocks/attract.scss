@@ -1,0 +1,45 @@
+$tablet-width: 660px;
+$desktop-width: 1200px;
+
+.attract {
+  position: relative;
+  min-height: 250px;
+  padding: 0 20px;
+  padding-top: 35px;
+}
+
+.attract::before {
+  content: "";
+  position: absolute;
+  height: 285px;
+  width: 320px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #ffffff;
+}
+
+.attract__text {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  &__offer {
+    padding-top: 45px;
+  }
+
+}
+
+.list-benefits {
+  list-style-type: none;
+}
+
+.list-benefits__item h3 {
+  font-family: "Open sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}

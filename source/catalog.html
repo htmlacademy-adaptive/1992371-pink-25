@@ -2,27 +2,59 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="icon" type="image/x-icon" href="img/glasses-desktop.svg">
+    <link rel="stylesheet" href="../source/css/style.css">
   </head>
   <body class="page__body">
+
     <header class="main-header">
 
-      <div class="main-header__logo">
-        <a href="#" class="main-header__logo-link">
-          <img src="img/logo-header.svg" alt="Логотип шапки" height="23" width="74">
-        </a>
+      <div class="back-catalog">
+        <img src="./img/mobile/back-mobile.png" alt="Фото города" height="462" width="320">
       </div>
 
-      <nav class="header-nav">
-        <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      </nav>
+      <section class="main-header__upper">
+
+        <div class="main-header__logo-mobile">
+          <a href="#" class="main-header__logo-link">
+            <img src="img/logo-header.svg" alt="Логотип шапки" height="23" width="74">
+          </a>
+        </div>
+
+        <div class="main-header__logo-tablet">
+          <a href="#" class="main-header__logo-link">
+            <img src="img/tablet/logotype-white-tablet.svg" alt="Логотип шапки" height="40" width="145">
+          </a>
+        </div>
+
+        <div class="main-header__logo-desktop">
+          <a href="#" class="main-header__logo-link">
+            <img src="img/desktop/logotype-white-desktop.svg" alt="Логотип шапки" height="40" width="147">
+          </a>
+        </div>
+
+        <nav class="header-nav header-nav--closed">
+          <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span><img src="./img/open menu btn.svg" alt="Кнопка открытия меню"></button>
+
+          <div class="header-nav__container">
+            <ul class="header-nav__list site-list">
+              <li class="site-list__item"><a href="#">Главная</a> </li>
+              <li class="site-list__item"><a href="#">Фотографии</a> </li>
+              <li class="site-list__item"><a href="#">Конкурс</a> </li>
+              <li class="site-list__item"><a href="#">HTML Academy</a> </li>
+            </ul>
+          </div>
+
+        </nav>
+      </section>
 
     </header>
 
     <main class="main-catalog">
 
-      <section class="catalog">
+      <section class="catalog-desc">
 
         <h2 class="visually-hidden">Фотографии пользователей</h2>
 
