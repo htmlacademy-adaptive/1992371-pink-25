@@ -1,0 +1,62 @@
+
+.benefits {
+  padding: 0 20px;
+  padding-top: 55px;
+}
+
+.list-benefits {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-benefits__item h3 {
+  font-family: "Open sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.list-benefits__item p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.benefits__iphone {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits__iphone--phone {
+  position: absolute;
+  top: 37px;
+  left: 72px;
+}
+
+.benefits__container {
+  padding-bottom: 45px;
+}
+
+.benefits__container--list {
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+.list-benefits {
+  list-style-type: none;
+}
+
+.list-benefits__item h3 {
+  font-family: "Open sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}

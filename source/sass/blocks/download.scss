@@ -1,0 +1,82 @@
+.download__download-link {
+  width: 98%;
+  height: 55px;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  & a {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 12px;
+    color: #ffffff;
+  }
+
+}
+
+.download {
+  position: relative;
+  padding: 28px 20px 38px 20px;
+  background-color: #1d2631;
+}
+
+.download__desc {
+  padding: 0 25px 0 25px;
+
+  &--text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  }
+
+}
+
+.download__desc--text {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.download__platforms-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.download__platforms-list--item:not(:last-child) {
+  padding-right: 35px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .download {
+    padding: 0 20px;
+    width: 300px;
+    background-color: transparent;
+
+    &__platforms {
+      padding-top: 15px;
+    }
+
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .download {
+    padding: 0 100px;
+  }
+
+}
