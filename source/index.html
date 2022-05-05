@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="icon" type="image/x-icon" href="img/glasses-desktop.svg">
-    <link rel="stylesheet" href="../source/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="page__body">
 
     <header class="main-header">
 
-      <section class="main-header__upper">
+      <div class="main-header__upper">
 
         <div class="main-header__logo">
 
@@ -20,7 +20,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/desktop/logotype-white-desktop.svg" >
               <source media="(min-width: 660px)" srcset="img/tablet/logotype-white-tablet.svg" >
-              <img src="img/logo-header.svg" alt="Логотип шапки" height="23" width="74">
+              <img src="img/logo-header.svg" alt="Логотип шапки">
             </picture>
           </a>
 
@@ -40,25 +40,34 @@
           </div>
 
         </nav>
-      </section>
+      </div>
 
-    </header>
+
 
       <section class="preview">
 
         <h1 class="visually-hidden">Взгляните иначе</h1>
-
-        <div class="preview__background"></div>
 
         <div class="preview__text preview__text--look">
           <p>Взгляните на жизнь иначе!</p>
         </div>
 
         <div class="preview__photo preview__photo--mobile">
+
           <div class="preview__photo preview__photo--screen">
-            <img src="img/mobile/screen-mobile.png" alt="Скрин телефона" height="197" width="111">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/desktop/screen-desktop.png">
+              <source media="(min-width: 660px)" srcset="img/tablet/screen-tablet.png">
+              <img src="img/mobile/screen-mobile.png" alt="Скрин телефона">
+            </picture>
           </div>
-          <img src="img/mobile/phone-preview.png" alt="Телефон" height="286" width="320">
+
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/desktop/phone-desktop.png">
+            <source media="(min-width: 660px)" srcset="img/tablet/phone-tablet.png">
+            <img src="img/mobile/phone-preview.png" alt="Телефон">
+          </picture>
+
         </div>
 
       </section>
@@ -95,7 +104,7 @@
 
       </section>
 
-
+    </header>
 
 
     <main class="main-container">
@@ -110,27 +119,27 @@
         </div>
 
         <div class="attract__text attract__text--offer">
-          <p>Нам есть, что вам предложить!</p>
+          <p>Нам есть, что вам <br> предложить!</p>
         </div>
 
       </section>
 
       <section class="benefits">
 
-        <h2 class="visually-hidden">Преимушества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
 
-        <div class="benefits__benefits-container">
+        <div class="benefits__container">
 
-          <ul class="list-benefits">
-            <li class="list-benefits__item">
+          <ul class="benefits__container benefits__container--list">
+            <li class="benefits__container benefits__container--item">
               <h3>Поднимает настроение</h3>
               <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="list-benefits__item">
+            <li class="benefits__container benefits__container--item">
               <h3>Меняет мир вокруг</h3>
               <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
-            <li class="list-benefits__item">
+            <li class="benefits__container benefits__container--item">
               <h3>Заводит новых друзей</h3>
               <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
@@ -140,10 +149,19 @@
 
         <div class="benefits__iphone">
 
-          <div class="benefits__iphone--phone">
-            <img src="img/mobile/mobile screen-hello.png" alt="Превью  с приветсвием" height="245" width="136">
+          <div class="benefits__iphone benefits__iphone--phone">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/">
+              <source media="(min-width: 660px)" srcset="img/tablet/screen-hello.png">
+              <img src="img/mobile/mobile-screen-hello.png" alt="Превью  с приветсвием">
+            </picture>
           </div>
-          <img src="img/mobile/iphone-solo.png" alt="Превью на телефоне" hieght="320" width="157">
+
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img">
+            <source media="(min-width: 660px)" srcset="img/tablet/screen-hello.png">
+            <img src="img/mobile/iphone-solo.png" alt="Превью на телефоне">
+          </picture>
 
         </div>
 
@@ -165,13 +183,13 @@
           <a href=""><img src="img/slider-active.svg" alt="Предыдущий слайд" height="6" width="6"></a>
         </div>
 
-        <!-- <div class="reviews__item">
+        <div class="reviews__item">
           <a href=""><img src="img/slider-innactive.svg" alt="Предыдущий слайд" height="6" width="6"></a>
         </div>
 
         <div class="reviews__item">
           <a href=""><img src="img/slider-innactive.svg" alt="Предыдущий слайд" height="6" width="6"></a>
-        </div> -->
+        </div>
 
       </div>
 
@@ -187,22 +205,22 @@
         </div>
 
         <div class="tariffs__main">
-          <div class="tariffs__main--section"><p>Розовый фильтр</p> <div class="tariffs__image"><img src="./img/yes-green.svg" alt="Есть" height="21" width="31"></div></div>
-          <div class="tariffs__main--section"><p>Смайлики</p> <div class="tariffs__image"><img src="./img/yes-green.svg" alt="Есть" height="21" width="31"></div></div>
-          <div class="tariffs__main--section"><p>Комментарии</p> <div class="tariffs__image--red"><img src="./img/no red.svg" alt="Нет" height="27" width="27"></div></div>
+          <div class="tariffs__main tariffs__main--section"><p>Розовый фильтр</p> <div class="tariffs__image"><img src="./img/yes-green.svg" alt="Есть" height="21" width="31"></div></div>
+          <div class="tariffs__main tariffs__main--section"><p>Смайлики</p> <div class="tariffs__image"><img src="./img/yes-green.svg" alt="Есть" height="21" width="31"></div></div>
+          <div class="tariffs__main tariffs__main--section"><p>Комментарии</p> <div class="tariffs__image tariffs__image--red"><img src="./img/no red.svg" alt="Нет" height="27" width="27"></div></div>
         </div>
 
         <div class="tariffs__slider">
 
-          <div class="reviews__item">
+          <div class="tariffs__slider tariffs__slider--item">
             <a href=""><img src="img/slider-innactive.svg" alt="Предыдущий слайд" height="6" width="6"></a>
           </div>
 
-          <div class="reviews__item">
+          <div class="tariffs__slider tariffs__slider--item">
             <a href=""><img src="img/slider-active.svg" alt="Предыдущий слайд" height="6" width="6"></a>
           </div>
 
-          <div class="reviews__item">
+          <div class="tariffs__slider tariffs__slider--item">
             <a href=""><img src="img/slider-innactive.svg" alt="Предыдущий слайд" height="6" width="6"></a>
           </div>
 
@@ -216,19 +234,19 @@
 
         <p class="contucts__text-me">Остались вопросы? Свяжитесь с нами!</p>
 
-        <p class="reviews__text reviews__text--author-contuct">Звоните:</p>
+        <p class="contucts__text contucts__text--author-contuct">Звоните:</p>
 
         <div class="contucts__wrapper">
           <a href="#" class="contucts__links">+7 (812) 555-66-66</a>
         </div>
 
-        <p class="reviews__text reviews__text--author-contuct">Пишите:</p>
+        <p class="contucts__text contucts__text--author-contuct">Пишите:</p>
 
         <div class="contucts__wrapper">
          <a href="#" class="contucts__links">mail@htmlacademy.ru</a>
         </div>
 
-        <p class="reviews__text reviews__text--author-contuct">Приезжайте в гости:</p>
+        <p class="contucts__text contucts__text--author-contuct">Приезжайте в гости:</p>
 
         <div class="contucts__wrapper">
           <a href="#" class="contucts__links">ул. Большая <br> Конюшенная, 19/8</a>
@@ -238,7 +256,7 @@
 
         <div class="contucts__container">
 
-          <div class="contucts__container--map">
+          <div class="contucts__container contucts__container--map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
               width="766"
@@ -264,7 +282,7 @@
 
         <button class="footer__button">
 
-          <div class="button__logo">
+          <div class="footer__button footer__button--logo">
             <img src="img/glasses_footer.svg" alt="Очки логотипа" height="40" width="59">
           </div>
 
@@ -283,7 +301,7 @@
         </div>
 
         <div class="footer__developed">
-          <a class="footer__developed--link" href="https://htmlacademy.ru">
+          <a class="footer__developed footer__developed--link" href="https://htmlacademy.ru">
             <span class="footer__text">Разработано</span>
             <img src="img/html academy.svg" alt="Лого htmlacademy">
           </a>
@@ -291,9 +309,92 @@
 
       </section>
 
+
+
+      <table>
+        <thead>
+
+          <tr>
+            <td class="none"></td>
+            <td class="left">
+              <div class="content">База</div>
+            </td>
+            <td class="center">
+              <div class="content">Стандарт</div>
+            </td>
+            <td class="right">
+              <div class="content">Анлим</div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="none"></td>
+            <td class="left">
+              <div class="content">1,99 usd</div>
+            </td>
+            <td class="center">
+              <div class="content">3,99 usd</div>
+            </td>
+            <td class="right">
+              <div class="content">9,99 usd</div>
+            </td>
+          </tr>
+
+        </thead>
+        <tbody>
+
+          <tr>
+            <td class="none">
+              <div class="content">Розовый фильтр </div>
+            </td>
+            <td class="left">
+              <div class="content">Да</div>
+            </td>
+            <td class="center">
+              <div class="content">Да</div>
+            </td>
+            <td class="right">
+              <div class="content">Да</div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="none">
+              <div class="content">Смайлики</div>
+            </td>
+            <td class="left">
+              <div class="content">Нет</div>
+            </td>
+            <td class="center">
+              <div class="content">Да</div>
+            </td>
+            <td class="right">
+              <div class="content">Да</div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="none">
+              <div class="content">Смайлики</div>
+            </td>
+            <td class="left">
+              <div class="content">Нет</div>
+            </td>
+            <td class="center">
+              <div class="content">Нет</div>
+            </td>
+            <td class="right">
+              <div class="content">Да</div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
     </footer>
 
     <script src="script.js"></script>
 
   </body>
-</html>.
+</html>

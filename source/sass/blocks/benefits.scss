@@ -33,19 +33,30 @@
   align-items: center;
 }
 
-/* .benefits__iphone::after {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background-color: #f2f2f2;
-} */
-
 .benefits__iphone--phone {
   position: absolute;
   top: 37px;
   left: 72px;
 }
 
-.benefits__benefits-container {
+.benefits__container {
   padding-bottom: 45px;
+}
+
+.benefits__container--list {
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+.list-benefits {
+  list-style-type: none;
+}
+
+.list-benefits__item h3 {
+  font-family: "Open sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
 }

@@ -15,8 +15,8 @@
   width: 75px;
   height: 75px;
   position: absolute;
-  top: -9px;
-  left: 23px;
+  top: -14px;
+  left: 22px;
   content: 'хит';
   z-index: 2;
   color: white;
@@ -27,7 +27,7 @@
 .tariffs::after {
   position: absolute;
   content: '';
-  top: 23px;
+  top: 15px;
   left: -27px;
   height: 23px;
   width: 104px;
@@ -97,4 +97,16 @@
     padding-right: 19px;
   }
 
+}
+
+.tariffs__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tariffs__slider--item {
+  padding-top: 45px;
+  padding-right: 19px;
+  padding-bottom: 60px;
 }

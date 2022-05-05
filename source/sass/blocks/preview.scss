@@ -3,12 +3,13 @@
   box-sizing: border-box;
 }
 
-.preview__background {
+.preview::before {
+  content: '';
   position: absolute;
   top: -69px;
   background: url("../img/mobile/back-mobile.png");
   width: 320px;
-  height: 460px;
+  height: 465px;
 }
 
 .preview__photo {
@@ -49,49 +50,33 @@
   text-align: center;
 }
 
-@media (min-width: $desktop-width) {
+.preview__background {
+  position: absolute;
+  top: -66px;
+}
 
-  .preview__photo--tablet {
-    display: none;
-  }
+@media (min-width: $tablet-width) {
 
-  .preview__photo--desktop {
-    display: block;
+  .preview::before {
+    content: '';
     position: absolute;
-    top: 98px;
+    top: -111px;
+    background: url("../img/tablet/back-tablet.png");
+    width: 660px;
+    height: 729px;
+    z-index: -1;
   }
 
-  .preview__photo--screen {
+  .preview__background {
     position: absolute;
-    top: 64px;
-    right: 250px;
+    top: -110px;
   }
 
-  .preview__text {
-    padding: 43px 52px 28px 20px;
-    font-size: 50px;
-  }
-
-  .preview__photo--mobile{
-    display: none;
-  }
-
-  .preview__photo--tablet {
-    display: block;
-  }
-
-  .preview__photo--desktop {
-    display: none;
-  }
-
-  .preview {
-    position: absolute;
-
-    &__text {
-      width: 300px;
-      padding: 102px 52px 28px 20px;
-      font-size: 40px;
-    }
+  .preview__photo {
+    box-sizing: border-box;
+    position: relative;
+    height: 286px;
+    bottom: -73px;
   }
 
   .preview__photo--screen {
@@ -100,9 +85,45 @@
     right: 94px;
   }
 
-  .preview__photo--tablet {
+  .preview__text--look {
     position: absolute;
-    top: 4px;
+    top: 79px;
+    left: 40px;
+    width: 247px;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    padding: 0;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .preview::before {
+    content: '';
+    position: absolute;
+    top: -111px;
+    left: 0;
+    background: url("../../img/desktop/back-desktop.png");
+    width: 1200px;
+    height: 855px;
+    z-index: -1;
+  }
+
+  .preview__text {
+    padding: 0 100px;
+  }
+
+  .preview__photo--screen {
+    position: absolute;
+    top: 65px;
+    left: 570px;
+    width: 230px;
+  }
+
+  .preview__photo {
+    bottom: -99px;
   }
 
 }
