@@ -5,7 +5,7 @@ $desktop-width: 1200px;
 body {
   font-family: "Open Sans", "Arial" ,sans-serif;
   margin: 0;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 .visually-hidden {
@@ -14,4 +14,30 @@ body {
 
 .main-container {
   width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+
+}
+
+.container {
+
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    padding: 0 130px;
+  }
+
 }

@@ -42,7 +42,7 @@
   color: #D22856;
 }
 
-.reviews__text--author-contuct {
+.contucts__text--author-contuct {
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 18px;
@@ -53,12 +53,12 @@
 .contucts__container {
   position: relative;
   padding-top: 42px;
-  min-height: 200px;
 
   &--map {
     position: relative;
     margin-left: -20px;
-    width: 320px;
+    min-width: 320px;
+    min-height: 200px;
   }
 
   &--marker {
@@ -73,7 +73,7 @@
 .contucts__container--map:before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 41px;
   left: 0;
   background-color: #ffffff;
   width: 100%;
@@ -86,4 +86,42 @@
   border: none;
   width: 100%;
   height: 200px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .contucts__text-me {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  .contucts__direction {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .contucts__container--map:before {
+    content: '';
+    position: absolute;
+    top: 42px;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    height: 33px;
+    clip-path: polygon(100% 0, 50% 100%, 0 0);
+  }
+
+  .contucts__container--map iframe {
+    display: block;
+    border: none;
+    width: 100%;
+    min-height: 374px;
+  }
+
+  .contucts__container--map {
+    min-width: 660px;
+  }
+
 }

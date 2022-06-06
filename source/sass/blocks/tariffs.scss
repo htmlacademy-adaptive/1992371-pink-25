@@ -1,39 +1,9 @@
-
 .tariffs {
   position: relative;
   width: 280px;
-  margin: 0 20px;
-  margin-top: 25px;
+  padding: 0 20px;
   overflow: hidden;
-}
-
-.tariffs::before {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  width: 75px;
-  height: 75px;
-  position: absolute;
-  top: -14px;
-  left: 22px;
-  content: 'хит';
-  z-index: 2;
-  color: white;
-  text-transform: uppercase;
-  transform: rotate(-45deg);
-}
-
-.tariffs::after {
-  position: absolute;
-  content: '';
-  top: 15px;
-  left: -27px;
-  height: 23px;
-  width: 104px;
-  overflow: hidden;
-  transform: rotate(-45deg);
-  background-color: #d22856;
+  background-color: #f2f2f2;
 }
 
 .tariffs__header {
@@ -109,4 +79,38 @@
   padding-top: 45px;
   padding-right: 19px;
   padding-bottom: 60px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .tariffs {
+    margin: 0;
+    width: 620px;
+    position: static;
+    padding: 50px 20px;
+  }
+
+  .tariffs::after {
+    display: none;
+  }
+
+  .tariffs__slider {
+    display: none;
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .tariffs {
+    margin: 0;
+    padding: 50px 130px;
+    width: 940px;
+  }
+
+  .tariffs__slider {
+    display: none;
+  }
+
 }
