@@ -1,0 +1,162 @@
+.back {
+  width: 233px;
+  color: #ffffff;
+  background-color: #283645;
+  border: 2px solid #283645;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.content-cost {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+}
+
+.pre {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.cost {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.table {
+  overflow: hidden;
+  width: 940px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.column {
+  width: 234px;
+  height: 59px;
+  background: #FFFFFF;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px 0px 0px 0px;;
+}
+
+.hit {
+  position: relative;
+}
+
+.hit::before {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: -14px;
+  left: 22px;
+  content: "хит";
+  z-index: 2;
+  color: white;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+}
+
+.hit::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: -27px;
+  height: 23px;
+  width: 104px;
+  overflow: hidden;
+  transform: rotate(-45deg);
+  background-color: #d22856;
+}
+
+@media (min-width: $tablet-width) {
+
+  .content {
+    height: auto;
+  }
+
+  .content-cost {
+    height: auto;
+  }
+
+  .table {
+    padding: 0 20px;
+    width: 620px;
+  }
+
+  .back {
+    overflow: hidden;
+  }
+
+  .hit::before {
+    top: -26px;
+    left: 15px;
+  }
+
+  .hit::after {
+    top: -5px;
+    left: -27px;
+  }
+
+  .tariffs__font-up {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .tariffs__font-down {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .column {
+    height: 45px;
+    width: 152px;
+  }
+
+  .back {
+    height: 75px;
+    width: 152px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .table {
+    width: 940px;
+  }
+
+  .pre {
+    padding: 8px 0;
+  }
+
+  .cost {
+    padding-bottom: 15px;
+  }
+
+  .back__hit {
+    overflow: hidden;
+  }
+
+  .tariffs__font-up {
+    font-size: 18px;
+  }
+
+  .tariffs__font-down {
+    font-size: 24px;
+  }
+
+}

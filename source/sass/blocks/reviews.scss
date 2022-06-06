@@ -1,0 +1,179 @@
+
+.reviews {
+  position: relative;
+  z-index: 2;
+}
+
+.reviews::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background-color: #f2f2f2;
+  width: 320px;
+  height: 18px;
+  -webkit-clip-path: polygon(100% 0, 50% 100%, 0 0);
+  clip-path: polygon(100% 0%, 100% 100%,-5% 97%);
+}
+
+.reviews__text {
+  margin: 0;
+  padding-top: 20px;
+}
+
+.reviews__text--author-name {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+.reviews__text--author-desc{
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.reviews__text--author-job {
+  display: none;
+}
+
+.reviews__slider-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews__item {
+  padding-top: 45px;
+  padding-right: 19px;
+  padding-bottom: 60px;
+}
+
+.reviews__left {
+  display: none;
+}
+
+.reviews__right {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  /* .reviews::before{
+   display: none;
+  } */
+
+  .reviews::after {
+    height: 44px;
+    width: 660px;
+    bottom: -1px;
+  }
+
+  .reviews__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__text--author-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 20px;
+    text-align: center;
+    order: 1;
+  }
+
+  .reviews__text--author-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .reviews__text--author-job {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    align-items: center;
+    color: #283645;
+    order: 2;
+  }
+
+  .reviews__item {
+    min-height: 80px;
+    padding: 0 20px;
+  }
+
+  .reviews__left {
+    display: none;
+  }
+
+  .reviews__right {
+    display: none;
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 130px;
+    padding-top: 150px;
+  }
+
+  .reviews__text {
+    width: 688px;
+  }
+
+  .reviews::before {
+    content: '';
+    position: absolute;
+    height: 63px;
+    width: 79px;
+    top: 40px;
+    background-image: url(../../img/desktop/quotes.svg);
+    background-repeat: no-repeat;
+  }
+
+  .reviews::after {
+    width: 1200px;
+    bottom: -1px;
+  }
+
+  .reviews__slider {
+    display: none;
+  }
+
+  .reviews__left {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+  }
+
+  .reviews__right {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+  }
+
+  .reviews__navr {
+    position: absolute;
+    right: 10%;
+  }
+
+  .reviews__navl {
+    position: absolute;
+    left: 10%;
+  }
+
+}

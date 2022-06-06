@@ -1,0 +1,88 @@
+.timer {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+
+  .timer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 330px;
+    width: 620px;
+    padding: 0 20px;
+
+    &__svg {
+      padding-top: 27px;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .timer__link-container a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #D22856;
+    }
+
+  }
+
+  .timer__container {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+  }
+
+  .timer__wrapper {
+    display: flex;
+    width: 660px;
+    justify-content: space-between;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .timer {
+    width: 940px;
+    padding: 0 130px;
+    padding-bottom: 70px;
+    background-color: #f2f2f2;
+  }
+
+  .timer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+  }
+
+  .timer__container {
+    width: 534px;
+    padding-right: 40px;
+    justify-content: space-evenly;
+  }
+
+  .timer__title h3 {
+    margin: 0;
+  }
+
+  .timer__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .timer .timer__link-container a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+}

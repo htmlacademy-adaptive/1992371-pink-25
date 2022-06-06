@@ -1,0 +1,37 @@
+.catalog {
+  display: grid;
+  grid-column: 280px;
+}
+
+.catalog__preview--first {
+  position: relative;
+  left: -20px;
+  height: 137px;
+}
+
+.catalog__preview--item {
+  width: 280px;
+  box-sizing: border-box;
+
+  &-contuct {
+    margin: 0;
+  }
+
+}
+
+.catalog__preview--item-online {
+  margin: 0;
+}
+
+.catalog__preview--item-review {
+  margin: 0;
+}
+
+.catalog__preview--desc {
+  height: 192px;
+  background-color: #f2f2f2;
+}
+
+.catalog__name {
+  display: flex;
+}
